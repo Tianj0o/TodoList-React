@@ -34,7 +34,7 @@ function App() {
       <h1>TODO List</h1>
       <Checkbox currentBox={currentBox} changeCurrentBox={setCurrentBox} items={items} />
       <input type="text" onKeyPress={(e)=>handleInput(e)} placeholder="Enter TODO" />
-      <Todos todos={todos} currentBox={currentBox} changeTodos={changeTodos} />
+      <Todos todos={todos} currentBox={currentBox} changeTodos={changeTodos} setTodos={setTodos} />
     </div>
   )
 }
